@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+  
+   font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+header{
+    height: 90vh;
+    width: 100vw;
+    margin: 0%; 
+    padding: 0%;
+    background-image: url("../images/gros-plan-trucs-organisation-benevoles-pour-don.jpg");
+    background-size: 95em ;
+    position: relative;
+}
+.Nav-Top{
+    background-color:lightgray;
+    height: 3.5em;
+    font-size:0.8em;
+    padding: 0.3em;
+}
+/*Gestion du Nav*/
+.Nav-Top li a {
+    padding: 0.3em;
+    font-size: calc(1.5vw - 5px);
+    text-decoration: none;
+    list-style: none;
+    color:black;
+}
+.logo {
+    height: 4em;
+    width: auto;
+}
+
+.LogoWrapper {
+    height: 9vh;
+    width: 6vw;
+    background-color:white;
+    border-radius: 50%;
+}
+.Nav-Top li a i{
+    font-size: calc(2.5vh - 2px);
+}
+
+.SocialMediaButtons li a {
+    margin: 0.4em;
+}
+.Nav-Bot{
+    background-color: whitesmoke;
+    height: 5.5em;
+}
+
+.Nav-Bot li {
+    font-size: calc(1.8vw - 2px);
+    margin: 0.5em;
+    font-weight:bold;
+    padding: 0.3em;
+}
+
+.SloganCent{
+    position:absolute;
+    top:38%;
+    transform: translateX(60%);
+    color:lightgray;
+    background-color: rgba(0, 255, 42, 0.4);
+    height: calc(35vh - 15px);
+    width: calc(46vw - 5px);
+    padding: 1em;
+}
+.SloganCentTitle{
+    font-size: 5vw;
+    color: white;
+    font-weight: bold;
+}
+.SloganCentSlog{
+    font-size: 2vw;
+}
+
+/*Gestion des buttons*/
+.DonateButton{
+    background-color: rgba(0, 255, 42, 0.3);
+    padding: 0.5em;
+}
+
+.HomeButton .btn {
+    margin: 1em;
+}
+.HomeButton i {
+    margin: 0.4vw;
+}
+.BorderSep{
+    border: dotted greenyellow 2px;
+    width:15vw;
+    margin: 1em;
+}
+
+/*PresentationSect*/
+.PresentationSect {
+    padding: 3em;
+    position: relative;
+}
+
+.ImgHomePresentWrapper{
+    position:absolute;
+    background-color: greenyellow;
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    left:47vw ;
+    top: 3vh;
+    z-index: 0;
+}
+.ImgHomePresent{
+   
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    object-fit: contain;
+    z-index: 1000;
+}
+.SendGiftWrapper{
+    height: 60vh;
+    margin: 3em;
+    padding: 2em;
+    background-color:rgba(161, 161, 161, 0.2);
+}
+.SendGiftWrapperItems img {
+    height: 16vh;
+    width: 10vw;
+    margin: 2em;
+}
+
+.SendGiftWrapperItems div p{
+    margin :1em;
+    text-align: center;
+    font-size: calc(1.5em - 5px);
+}
+.InterviewWrapper{
+    position: relative;
+    margin-top: 5em;
+    padding: 2em;
+}
+.InterviewWrapper img {
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    object-fit: contain;
+    z-index: 1000;
+
+}
+
+.ImgHomePresentWrapper2{
+    position:absolute;
+    background-color: greenyellow;
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    left: 11em;
+    top: 0.7em;
+    z-index: 0;
+}
+.InterviewWrapperText {
+    margin: 1em;
+    padding: 1em;
+}
+
+/*EventsWrapperImg Gestion*/
+.EventsWrapper{
+    position: relative;
+    margin-top: 5em;
+}
+.EventsWrapperImg{
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    object-fit: contain;
+    z-index: 1000;
+}
+
+.EventsWrapperText {
+    margin: 1em;
+    padding: 1em;
+}
+.ImgHomePresentWrapper3 {
+    position:absolute;
+    background-color: greenyellow;
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    right: 9.5em;
+    top: -1.5em;
+    z-index: 0;
+}
+
+.btnInfo{
+    background-color: greenyellow;
+    
+}
+
+footer{
+    background-color:rgba(161, 161, 161, 0.7)
+}
