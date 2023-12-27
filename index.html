@@ -12,10 +12,10 @@
     <div class="container-fluid">
         <header>
                 <nav class="Nav-Top navbar-expand ">
-                    <ul class="navbar-nav  d-flex justify-content-between  align-items-center">
+                    <ul class="navbar-nav  d-flex justify-content-between  align-items-start">
                         <li ><a class="NavTopSlo">S'engager pour aider son prochain</a></li>
-                        <div class="d-flex SocialMediaButtons">
-                            <ul class="navbar-nav">
+                        <div class="d-flex SocialMediaButtons ">
+                            <ul class="navbar-nav d-flex ">
                                <li class="nav-item"><a class="nav-link"><i class="bi bi-instagram"></i></a></li>
                                <li class="nav-item"><a class="nav-link"><i class="bi bi-facebook"></i></a></li>
                                <li class="nav-item"><a class="nav-link"><i class="bi bi-twitter-x"></i></a></li>
@@ -25,11 +25,11 @@
                     </ul>
                 </nav>
                 <nav class="Nav-Bot navbar-expand d-flex justify-content-around  align-items-center ">
-                    <div class="LogoWrapper d-flex flex-column align-items-center"><img class="logo" src="./assets/icons/icons8-volunteering-25.png" alt='logo'></div>
+                    <div class="LogoWrapper d-flex flex-column align-items-center"><img class="logo"  ></div>
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item"><a class="nav-link">ACCUEIL</a></li>
                         <li class="nav-item"><a class="nav-link">DISPOSITIFS</a></li>
-                        <li class="nav-item"><a class="nav-link">ÉVÊNEMENT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./events.html">ÉVÊNEMENT</a></li>
                         <li class="nav-item"><a class="nav-link">FAQ</a></li>
                         <li  class="nav-item DonateButton"><a>FAIRE UN DON</a></li>
                     </ul>
@@ -101,27 +101,37 @@
                 <img class="EventsWrapperImg" src="./assets/images/environment-4787978_1280.jpg" alt="usines">
             </div>
         </section>
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-                <div class="col mb-3">
-                  <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                  </a>
+        <section class="DonateWrapper row justify-content-center">
+            <div class="DonateWrapperBox col-9 d-flex row justify-content-between">
+                <div class="DonateWrappertText d-flex flex-column align-items-center col-6">
+                    <p><b style="font-size: 3.5em;">Un Don, une action</b></p>
+                    <span class="BorderSep d-flex "></span>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, lacus tincidunt ultricies semper, leo neque molestie augue, et iaculis nibh neque vitae ipsum. Nam nulla mauris, dignissim ac lacinia vitae, dapibus et nulla. Nam tincidunt pulvinar ipsum rutrum condimentum. Suspendisse vehicula tempus efficitur. Morbi id nisi in nisl pulvinar ornare sed ut leo. Duis eget risus ac velit lacinia aliquam. Ut sed ultr</h6>
                 </div>
-            
-                <div class="col mb-3">
-            
+                <div class="DonateWrappertDon d-flex flex-column align-items-center col-6">
+                    <h1 class="text-center"><b style="font-size:1.2em;">80,000€ </b>de dons obtenus</h1>
+                    
+                    <form>
+                        <button class="btn btn-warning"><i class="bi bi-currency-euro"></i></button></i> <input type="text" name="valuedon" placeholder="Entrez un montant" value="10"/>
+                    </form>
+                    <div class="d-flex ButtonsPrices">
+                        <span><button class="btn btn-success btn-lg">10€</button></span>
+                        <span><button class="btn btn-success btn-lg">20€</button></span>
+                        <span><button class="btn btn-success btn-lg">Choisir mon montant</button></span>
+                    </div>
+                    <button class="btn btn-danger">Faire un don</button>
                 </div>
-            
-                <div class="col mb-3">
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                  </ul>
-                </div>
-              </footer>
+            </div>
+        </section>
     </div>
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Faire un Don</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Résultats 2023</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nous Connaitre</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 UNITEC, Inc</p>
+        </footer>
 </body>
 </html>

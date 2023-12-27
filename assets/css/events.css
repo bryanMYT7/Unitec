@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+  
+   font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+header{
+
+    width: 100vw;
+    margin: 0%; 
+    padding: 0%;
+
+    background-size: 95em ;
+    position: relative;
+}
+.Nav-Top{
+    background-color:lightgray;
+    height: 4em;
+    font-size:0.8em;
+    padding: 0.3em;
+}
+/*Gestion du Nav*/
+.Nav-Top li a {
+    padding: 0.4em;
+    font-size: calc(1.5vw - 5px);
+    text-decoration: none;
+    list-style: none;
+    color:black;
+}
+.logo {
+    height: 4em;
+    width: auto;
+}
+
+.LogoWrapper {
+    height: 9vh;
+    width: 6vw;
+    background-color:white;
+    border-radius: 50%;
+}
+.Nav-Top li a i{
+    font-size: calc(2.5vh - 2px);
+}
+
+.SocialMediaButtons li a {
+    margin: 0.4em;
+  
+}
+.Nav-Bot{
+    background-color: whitesmoke;
+    height: 5.5em;
+}
+
+.Nav-Bot li {
+    font-size: calc(1.8vw - 2px);
+    margin: 0.5em;
+    font-weight:bold;
+    padding: 0.3em;
+}
+
+.ImgHomePresent1{
+    height: calc(45vh - 5vh);
+    width: auto;
+    margin: 4em;
+    z-index: 1000;
+}
+
+.CarouselWrapperBox{
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(161, 161, 161, 0.3);
+    height: 60vh;
+}
+
+.EventsImgWrapper{
+margin-top: 3em;
+}
+.BorderSep{
+    border: dotted greenyellow 2px;
+    width:15vw;
+    margin: 1em;
+}
+.ImgWrapperCont{
+    position:absolute;
+    background-color: greenyellow;
+    height: calc(45vh - 10px);
+    width: calc(35vw - 10px);
+    right:1vw ;
+    top: 3vh;
+    z-index: 0;
+}
+
+.ImgWrapperContWrap{
+    position: relative;
+}
+
+/*Gestion de la vidéo*/
+.RecoltSectWrapperCont{
+    position: absolute;
+    background-color: greenyellow;
+    height: calc(45vh - 10px);
+    width: calc(42vw - 10px);
+    left:-3vw ;
+    top: -1vh;
+    z-index: 0;
+}
+
+.RecoltSectWrapper video {
+    z-index: 1000;
+}
+.RecoltSectWrapper{
+    position: relative;
+    z-index: 1000;
+    
+}
+footer{
+    background-color:rgba(161, 161, 161, 0.7);
+    margin: 0%;
+    padding: 0%;
+}
