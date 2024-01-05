@@ -12,10 +12,10 @@
     <div class="container-fluid">
         <header>
                 <nav class="Nav-Top navbar-expand ">
-                    <ul class="navbar-nav  d-flex justify-content-between  align-items-start">
-                        <li ><a class="NavTopSlo">S'engager pour aider son prochain</a></li>
+                    <ul class="navbar-nav  d-flex justify-content-between align-items-center">
+                        <li class="ms-2"><a class="NavTopSlo">S'engager pour aider son prochain</a></li>
                         <div class="d-flex SocialMediaButtons ">
-                            <ul class="navbar-nav d-flex ">
+                            <ul class="navbar-nav d-flex  ">
                                <li class="nav-item"><a class="nav-link"><i class="bi bi-instagram"></i></a></li>
                                <li class="nav-item"><a class="nav-link"><i class="bi bi-facebook"></i></a></li>
                                <li class="nav-item"><a class="nav-link"><i class="bi bi-twitter-x"></i></a></li>
@@ -24,8 +24,11 @@
                         </div>
                     </ul>
                 </nav>
-                <nav class="Nav-Bot navbar-expand d-flex justify-content-around  align-items-center ">
-                    <div class="LogoWrapper d-flex flex-column align-items-center"><img class="logo"  ></div>
+                <nav class="Nav-Bot navbar-expand d-flex justify-content-between align-items-center ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                   </button>
+                    <div class="LogoWrapper d-flex flex-column align-items-center"></div>
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item"><a class="nav-link">ACCUEIL</a></li>
                         <li class="nav-item"><a class="nav-link">DISPOSITIFS</a></li>
@@ -39,37 +42,38 @@
                 <h1 class=" SloganCentTitle">Devenez un héro</h1>
                 <h3 class="SloganCentSlog">Intéressé par le don de vêtements ?</h3>
                 <span class="d-flex btn-group HomeButton">
-                     <button type="button" class="btn btn-success SloganCentButton text-center" id="DonateButton"><i class="bi bi-heart-fill"></i>Faire un Don</button>
-                     <button type="button" class="btn  SloganCentButton text-center " style="background-color: aliceblue;" id="NextEventButton"><i class="bi bi-calendar"></i>Nos Prochains Évênements</button>
+                     <button type="button" class="btn btn-sm btn-success SloganCentButton text-center" id="DonateButton"><i class="bi bi-heart-fill"></i>Faire un Don</button>
+                     <button type="button" class="btn btn-sm  SloganCentButton text-center " style="background-color: aliceblue;" id="NextEventButton"><i class="bi bi-calendar"></i>Nos Évênements</button>
                 </span>
             </span>
         </header>
         <section class="row justify-content-center ">
             <div class="PresentationSect d-flex col-9">
                 <div class="col-7 p-2">
-                    <h1>UNITEC, une communauté pleine d'entraide et de solidarité</h1>
+                    <h1 class="PresentationSectTitl">UNITEC, une communauté pleine d'entraide et de solidarité</h1>
                     <span class="BorderSep d-flex "></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, lacus tincidunt ultricies semper, leo neque molestie augue, et iaculis nibh neque vitae ipsum. Nam nulla mauris, dignissim ac lacinia vitae, dapibus et nulla. Nam tincidunt pulvinar ipsum rutrum condimentum. Suspendisse vehicula tempus efficitur. Morbi id nisi in nisl pulvinar ornare sed ut leo. Duis eget risus ac velit lacinia aliquam. Ut sed ultrices sem.</p>
+                    <p > nous efforçons de construire un monde où la solidarité comble le fossé entre ceux qui sont dans le besoin et ceux qui ont les moyens d’aider</p> <p>Vos dons à UNITEC ont un impact significatif, favorisant un sentiment de solidarité qui transcende les frontières et apporte de l’espoir à ceux qui sont confrontés à des défis. </p><p>Chaque geste de solidarité et chaque don à UNITEC contribue à bâtir une société plus inclusive et bienveillante pour tous.</p>
                     <span><a href="#" class="btn btn-sucess btnInfo">En Savoir plus</a></span>
                 </div>
-                <div class="ImgHomePresentWrapper"></div>
+                <div class="ImgHomePresentWrapper"> </div>
                 <img class="ImgHomePresent"src="./assets/images/vetements-feminins-benevoles-tenant-boite-dons (1).jpg" alt="benevole">
+            
             </div>
         </section>
         <section class="row VideoHomeWrapper justify-content-center">
             <div class="d-flex col-9  flex-column align-items-center">
                 <h1>Une collecte 100% Digitalisée</h1>
-                <video height="400px" width="600px" loop="infinite" autoplay muted>
+                <video height="400px" width="600px" loop="infinite" + (days*24*60*60*1000) muted>
                     <source src="./assets/images/pexels-rodnae-productions-6646688 (1080p).mp4" type="video/mp4">
                 </video>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, lacus tincidunt ultricies semper, leo neque molestie augue, et iaculis nibh neque vitae ipsum. Nam nulla mauris, dignissim ac lacinia vitae, dapibus et nulla. Nam tincidunt pulvinar ipsum rutrum condimentum. Suspendisse vehicula tempus efficitur. Morbi id nisi in nisl pulvinar ornare sed ut leo. Duis eget risus ac velit lacinia aliquam. Ut sed ultrices sem.</p>
+                <p class="text-center">Lancez-vous dans un voyage de mode durable avec Digital Clothes Collect d’UNITEC, où vous pouvez contribuer à un avenir plus vert grâce à des dons de vêtements responsables.</p><p class="text-center">La collecte de vêtements numériques d’UNITEC révolutionne la façon dont nous donnons en retour – donnez vos tenues numériques préférées pour soutenir notre mission de durabilité et d’autonomisation communautaire.</p>
             </div>
         </section>
         <section class="row SendGiftWrapper justify-content-center">
-            <div class="d-flex col-9 flex-column align-items-center">
-                <h1>Faites vos dons en 3 étapes seulement !</h1>
+            <div class="d-flex col-8 flex-column align-items-center">
+                <h1 class="text-center m-4">Faites vos dons en 3 étapes seulement !</h1>
                 <span class="BorderSep d-flex "></span>
-                <div class="SendGiftWrapperItems d-flex">
+                <div class="SendGiftWrapperItems d-flex mb-4">
                     <div class="d-flex flex-column  align-items-center"><img src="./assets/icons/icons8-clothes-100 (1).png"><p>Sélectionner vos vêtements que vous ne portez plus</p></div>
                     <div class="d-flex flex-column  align-items-center"><img src="./assets/icons/icons8-handshake-100.png"><p>Emballez vos vêtements avec soins</p></div>
                     <div class="d-flex flex-column  align-items-center"><img src="./assets/icons/icons8-sell-100.png"><p>Faites des heureux, en déposant vos colis dans l'une de nos structures</p></div>
@@ -84,7 +88,7 @@
                 <div class="InterviewWrapperText d-flex flex-column align-items-center justify-content-center">
                     <h1 class="text-center">Témoignage de Émilie, Bénévole depuis +de 5 ans</h1>
                     <span class="BorderSep d-flex "></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, lacus tincidunt ultricies semper, leo neque molestie augue, et iaculis nibh neque vitae ipsum. Nam nulla mauris, dignissim ac lacinia vitae, dapibus et nulla. Nam tincidunt pulvinar ipsum rutrum condimentum. Suspendisse vehicula tempus efficitur. Morbi id nisi in nisl pulvinar ornare sed ut leo. Duis eget risus ac velit lacinia aliquam. Ut sed ultrices sem.</p>
+                    <p>En tant que bénévole dévouée au sein de cette merveilleuse organisation, j’ai eu le privilège d’être témoin de la générosité des donateurs de vêtements qui contribuent généreusement à notre mission. Leur compassion et leur volonté de partager ont non seulement fourni des vêtements aux personnes dans le besoin, mais ont également réchauffé le cœur de toute notre communauté. Faire partie de cet effort a été une expérience vraiment enrichissante, et je suis inspiré par l’impact positif que nous pouvons faire ensemble par le simple fait de donner.</p>
                     <span><a href="#" class="btn btn-sucess btnInfo ">En Savoir plus</a></span>
                 </div>
             </div>
@@ -94,7 +98,7 @@
                 <div class="EventsWrapperText d-flex flex-column align-items-center justify-content-center">
                     <h1>Nos derniers évênements</h1>
                     <span class="BorderSep d-flex "></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, lacus tincidunt ultricies semper, leo neque molestie augue, et iaculis nibh neque vitae ipsum. Nam nulla mauris, dignissim ac lacinia vitae, dapibus et nulla. Nam tincidunt pulvinar ipsum rutrum condimentum. Suspendisse vehicula tempus efficitur. Morbi id nisi in nisl pulvinar ornare sed ut leo. Duis eget risus ac velit lacinia aliquam. Ut sed ultrices sem.</p>
+                    <p>Notre plus récent événement, a été un énorme succès car nous avons réuni une communauté diversifiée pour une journée remplie de camaraderie et de but. Des ateliers stimulants aux témoignages émouvants, l’événement a mis en valeur l’esprit d’unité inébranlable qui définit notre association, laissant tout le monde inspiré et motivé à continuer d’avoir un impact positif dans la vie de ceux que nous servons.</p>
                     <span><a href="#" class="btn btn-sucess btnInfo">En Savoir plus</a></span>
                 </div> 
                 <div class="ImgHomePresentWrapper3"></div>
@@ -102,36 +106,36 @@
             </div>
         </section>
         <section class="DonateWrapper row justify-content-center">
-            <div class="DonateWrapperBox col-9 d-flex row justify-content-between">
+            <div class="DonateWrapperBox col-9  col-sm-7 d-flex row justify-content-between">
                 <div class="DonateWrappertText d-flex flex-column align-items-center col-6">
-                    <p><b style="font-size: 3.5em;">Un Don, une action</b></p>
+                    <p class="DonateWrapperTitle"><b>Un Don, une action</b></p>
                     <span class="BorderSep d-flex "></span>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, lacus tincidunt ultricies semper, leo neque molestie augue, et iaculis nibh neque vitae ipsum. Nam nulla mauris, dignissim ac lacinia vitae, dapibus et nulla. Nam tincidunt pulvinar ipsum rutrum condimentum. Suspendisse vehicula tempus efficitur. Morbi id nisi in nisl pulvinar ornare sed ut leo. Duis eget risus ac velit lacinia aliquam. Ut sed ultr</h6>
+                    <p class="DonateWrapperCont">Les dons contribuent au sentiment de communauté. En soutenant l’association, vous faites partie d’un effort collectif, favorisant une responsabilité partagée pour créer un changement positif.</p>
                 </div>
                 <div class="DonateWrappertDon d-flex flex-column align-items-center col-6">
-                    <h1 class="text-center"><b style="font-size:1.2em;">80,000€ </b>de dons obtenus</h1>
+                    <p class="DonateWrapperTitle text-center"><b>80,000€ </b>de dons obtenus</p>
                     
                     <form>
-                        <button class="btn btn-warning"><i class="bi bi-currency-euro"></i></button></i> <input type="text" name="valuedon" placeholder="Entrez un montant" value="10"/>
+                        <button class="btn btn-sm btn-warning"><i class="bi bi-currency-euro"></i></button></i> <input type="text" name="valuedon" placeholder="Entrez un montant"/>
                     </form>
                     <div class="d-flex ButtonsPrices">
-                        <span><button class="btn btn-success btn-lg">10€</button></span>
-                        <span><button class="btn btn-success btn-lg">20€</button></span>
-                        <span><button class="btn btn-success btn-lg">Choisir mon montant</button></span>
+                        <span><button class="btn btn-success btn-sm">10€</button></span>
+                        <span><button class="btn btn-success btn-sm">20€</button></span>
+                        <span><button class="btn btn-success btn-sm">Montant libre</button></span>
                     </div>
-                    <button class="btn btn-danger">Faire un don</button>
+                    <button class="btn btn-danger btn-sm">Faire un don</button>
                 </div>
             </div>
         </section>
-    </div>
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Faire un Don</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Résultats 2023</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nous Connaitre</a></li>
-          </ul>
-          <p class="text-center text-body-secondary">© 2023 UNITEC, Inc</p>
-        </footer>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Faire un Don</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Résultats 2023</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nous Connaitre</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 UNITEC, Inc</p>
+          </footer>
+    </div>
 </body>
 </html>

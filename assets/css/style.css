@@ -2,6 +2,7 @@
 body {
   
    font-family: 'Roboto', sans-serif;
+   
 }
 
 .container-fluid {
@@ -20,21 +21,27 @@ header{
 }
 .Nav-Top{
     background-color:lightgray;
-    height: 3em;
+    height: 4em;
     font-size:0.8em;
-    padding: 0.3em;
 }
 /*Gestion du Nav*/
 .Nav-Top li a {
-    padding: 0.4em;
     font-size: calc(1.5vw - 5px);
     text-decoration: none;
     list-style: none;
     color:black;
 }
+/*NavTopSlo*/
+.Nav-Top .NavTopSlo {
+    font-size: calc(1.5em  - 2px);
+}
 .logo {
-    height: 4em;
-    width: auto;
+    width: 8em;
+height: 5em;
+}
+.LogoWrapper{
+    margin-left: 2em;
+    height: 5em;
 }
 
 .LogoWrapper {
@@ -44,20 +51,20 @@ header{
     border-radius: 50%;
 }
 .Nav-Top li a i{
-    font-size: calc(2.5vh - 2px);
+    font-size: calc(2.6vh - 2px);
 }
 
 .SocialMediaButtons li a {
-    margin: 0.4em;
+    margin: calc(0.5em + 2px);
   
 }
 .Nav-Bot{
-    background-color: whitesmoke;
-    height: 5.5em;
+    background-color:white;
+    height: 6em;
 }
 
 .Nav-Bot li {
-    font-size: calc(1.8vw - 2px);
+    font-size: calc(2.6vh - 2px);
     margin: 0.5em;
     font-weight:bold;
     padding: 0.3em;
@@ -69,17 +76,19 @@ header{
     transform: translateX(60%);
     color:black;
     background-color: rgba(0, 255, 42, 0.4);
-    height: calc(35vh - 15px);
-    width: calc(46vw - 5px);
+    height: calc(33vh - 12px);
+    width: calc(46vw + 15px);
     padding: 1em;
 }
 .SloganCentTitle{
     font-size: 5vw;
-    color: white;
-    font-weight: bold;
+    color:whitesmoke;
+    font-weight: 800;
 }
 .SloganCentSlog{
     font-size: 2vw;
+    color:black;
+    font-weight: 700;
 }
 
 /*Gestion des buttons*/
@@ -87,9 +96,11 @@ header{
     background-color: rgba(0, 255, 42, 0.3);
     padding: 0.5em;
 }
-
+/*breakpoint : 418 MOBILE*/
 .HomeButton .btn {
-    margin: 1em;
+    margin: 2em;
+    width: calc(10vw + 55px);
+    font-size: calc(1em - 2px);
 }
 .HomeButton i {
     margin: 0.4vw;
@@ -106,39 +117,35 @@ header{
     position: relative;
 }
 
-
-.ImgHomePresentWrapper{
-    position:absolute;
-    background-color: greenyellow;
-    height: calc(45vh - 10px);
-    width: calc(35vw - 10px);
-    left:47vw ;
-    top: 3vh;
-    z-index: 0;
+/*PresentatSect*/
+.PresentationSectTitl {
+    font-size: 4.5vh;
 }
+
+
 .ImgHomePresent{
    
     height: calc(45vh - 10px);
     width: calc(35vw - 10px);
     object-fit: contain;
     z-index: 1000;
-}
+}/*bp 670*/
 .SendGiftWrapper{
-    height: 60vh;
+    height: calc(78vh - 30px);
     margin: 3em;
     padding: 2em;
     background-color:rgba(161, 161, 161, 0.2);
 }
 .SendGiftWrapperItems img {
-    height: 16vh;
-    width: 10vw;
+    height: calc(16vh + 4px);
+    width: calc(10vw + 10px);
     margin: 2em;
 }
 
 .SendGiftWrapperItems div p{
     margin :1em;
     text-align: center;
-    font-size: calc(1.5em - 5px);
+    font-size: calc(2em - 15px);
 }
 .InterviewWrapper{
     position: relative;
@@ -153,15 +160,7 @@ header{
 
 }
 
-.ImgHomePresentWrapper2{
-    position:absolute;
-    background-color: greenyellow;
-    height: calc(45vh - 10px);
-    width: calc(35vw - 10px);
-    left: 11em;
-    top: 0.7em;
-    z-index: 0;
-}
+
 .InterviewWrapperText {
     margin: 1em;
     padding: 1em;
@@ -171,8 +170,8 @@ header{
 .EventsWrapper{
     position: relative;
     margin-top: 5em;
-    height: 60vh;
-    margin-bottom: 8em;
+    height: 70vh;
+    margin-bottom: 5em;
 }
 .EventsWrapperImg{
     height: calc(45vh - 10px);
@@ -185,40 +184,44 @@ header{
     margin: 1em;
     padding: 1em;
 }
-.ImgHomePresentWrapper3 {
-    position:absolute;
-    background-color: greenyellow;
-    height: calc(45vh - 10px);
-    width: calc(35vw - 10px);
-    right: 9.5em;
-    top: -1.5em;
-    z-index: 0;
-}
+
 
 .btnInfo{
     background-color: greenyellow;
     
 }
-
+/*bp 619*/
 .DonateWrapper {
     background-color: black;
-    height: 70vh;
+    height: 60vh;
     position: relative;
 }
 .DonateWrapperBox{
     background-color: white;
-    height: 50vh;
+    height: calc(55vh + 2em);
     padding: 0%;
     position: absolute;
-    top: -4em;
+    top: -7em;
     box-shadow: 2px 2px 10px lightslategray;
 }
 .DonateWrappertDon{
     background-color: lightgray;
     padding: 2em;
+    height: calc(55vh  + 2em);
+   
 }
 .DonateWrappertText {
     padding: 2em;
+    overflow: scroll;
+}
+
+.DonateWrapperCont {
+    font-size: calc(1.3em - 7px);
+    
+}
+/*bp 661px */
+.DonateWrapperTitle b{
+    font-size: calc(3em - 20px);
 }
 .ButtonsPrices .btn {
     margin: 0.5em;
